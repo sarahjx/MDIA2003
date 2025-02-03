@@ -6,7 +6,7 @@
 .site-footer{
     margin: auto;
     background-color: blueviolet;
-    height: 598px
+
 }
 
 .footer-subtitle{
@@ -17,32 +17,40 @@
     display: flex;
     justify-content: space-around;
     width: 760px;
-    height: 182px;
+    margin: auto;
+    background-color: white;
+
 }
 .member-profile img{
     width: 118px;
     height: 118px;
     border-radius: 100%;
     background-color: cadetblue;
+    margin: 32px;
     
 
 }
 .member-profile figcaption{
     width: 546px;
     height: 72px;
-    font: var(--footer-font-family)
+    font: var(--footer-font-family);
+    margin: auto;
 }
 
 
 .footer-column-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:center ;
     flex-wrap: wrap;
-
+    margin: 2em;
   }
+.footer-column-container section{
+    margin: 2rem
+}
 
 
 .left-column {
+    
     width: 232px;
     height: 285px;
 }
@@ -85,10 +93,10 @@
 }
 
 
-/* .right-column {
+.right-column {
     width: 144px;
     height: 176px;
-} */
+}
 
 
   
