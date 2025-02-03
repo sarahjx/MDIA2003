@@ -2,10 +2,13 @@
 /* desktop */
 :root {
     --footer-font-family: normal 12px "Ubuntu";
+    --footer-font-color: white;
 }
+
 .site-footer{
-    margin: auto;
-    background-color: blueviolet;
+    margin-left: 208px ;
+    margin-right: 208px;
+ 
 
 }
 
@@ -15,10 +18,11 @@
 
 .member-profile{
     display: flex;
-    justify-content: space-around;
-    width: 760px;
+
+    width: auto;
     margin: auto;
-    background-color: white;
+  
+    background-color: green;
 
 }
 .member-profile img{
@@ -32,17 +36,20 @@
 }
 .member-profile figcaption{
     width: 546px;
-    height: 72px;
+    height: auto;
     font: var(--footer-font-family);
-    margin: auto;
+    text-align: ; /* Align the text to the left */
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Vertically center the text */
+    justify-content: flex-start;
 }
 
 
 .footer-column-container {
     display: flex;
-    justify-content:center ;
+    justify-content:space-between ;
     flex-wrap: wrap;
-    margin: 2em;
+    margin: 0;
   }
 .footer-column-container section{
     margin: 2rem
@@ -52,15 +59,16 @@
 .left-column {
     
     width: 232px;
-    height: 285px;
+    height: auto;
+
 }
 .footer-description {
-    font: var(--footer-font-family)
+    font: var(--footer-font-family);
 }
 
 .mid-left-column {
     width: 232px;
-    height: 265px;    
+    height: auto;    
 }
 
     
@@ -74,7 +82,7 @@
   }
   
   .column-images div {
-    width: 100%; 
+
     width: 64px;
     height: 64px;
     border-radius: 2px;
@@ -84,7 +92,7 @@
 
 .mid-right-column {
     width: 320px;
-    height: 365px;
+    height: auto;
 
 }
 .mid-right-column p {
@@ -95,7 +103,7 @@
 
 .right-column {
     width: 144px;
-    height: 176px;
+    height: auto;
 }
 
 
