@@ -3,4 +3,68 @@
     line-height: 5px;
     
 }
+.service-title {
+    font-size: 16px;
+    text-align: center;
+}
+.service-description {
+    font-size: 12px;
+    text-align: center;
+}
 
+.services-list {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    list-style: none;
+  }
+  
+  .service-item {
+    width: 23%; 
+    padding: 50px; 
+    text-align: center; 
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .sub-section-title {
+    font-size: 13px;
+  }
+  
+@media screen and (max-width: 632px) {
+    .services-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        list-style: none; 
+      }
+      
+      .service-item {
+        background-color: #f0f0f0;
+        margin: 0 auto; 
+
+      }
+      .service-title, .service-description {
+        text-align: center;
+      }
+      
+}
+
+@media screen and (max-width: 432px) {
+    .services-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .service-item {
+        max-width: 25%;
+        max-height:15%;
+        float: left;
+    }
+    .service-item img {
+        max-width: 25%;
+        max-height:15%;
+        float: left;
+    }
+}
