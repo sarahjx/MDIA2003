@@ -1,9 +1,16 @@
- 
-/* desktop */
 
+/* desktop */
+:root {
+    --footer-font-family: normal 12px "Ubuntu";
+}
 .site-footer{
-    margin: 10em;
+    margin: auto;
     background-color: blueviolet;
+    height: 598px
+}
+
+.footer-subtitle{
+    font: 500 15px "Ubuntu", sans-serif;
 }
 
 .member-profile{
@@ -23,19 +30,26 @@
 .member-profile figcaption{
     width: 546px;
     height: 72px;
+    font: var(--footer-font-family)
 }
 
 
-.footer-container {
+.footer-column-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
   }
 
+
 .left-column {
     width: 232px;
-    height: 285px
+    height: 285px;
 }
+.footer-description {
+    font: var(--footer-font-family)
+}
+
 .mid-left-column {
     width: 232px;
     height: 265px;    
@@ -61,17 +75,20 @@
   }
 
 .mid-right-column {
-    width: 360px;
+    width: 320px;
     height: 365px;
-    text-align: justify;
 
+}
+.mid-right-column p {
+    font: 700 9px "Open Sans", sans-serif;
+    text-align: justify;
 }
 
 
-.right-column {
+/* .right-column {
     width: 144px;
     height: 176px;
-}
+} */
 
 
   
@@ -86,4 +103,4 @@
 .email-input {
     width: 144px;
     height: 32px
-}
+}  
