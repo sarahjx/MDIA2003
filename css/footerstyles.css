@@ -1,21 +1,89 @@
-footer{
-    margin: 10em
+ 
+/* desktop */
+
+.site-footer{
+    margin: 10em;
+    background-color: blueviolet;
 }
+
+.member-profile{
+    display: flex;
+    justify-content: space-around;
+    width: 760px;
+    height: 182px;
+}
+.member-profile img{
+    width: 118px;
+    height: 118px;
+    border-radius: 100%;
+    background-color: cadetblue;
+    
+
+}
+.member-profile figcaption{
+    width: 546px;
+    height: 72px;
+}
+
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+  }
+
+.left-column {
+    width: 232px;
+    height: 285px
+}
+.mid-left-column {
+    width: 232px;
+    height: 265px;    
+}
+
+    
+.column-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 232px;
+    height: 224px;
+
   }
   
-  .track-us, .minions-content {
-    flex: 1;
-    margin: 0 10px;
+  .column-images div {
+    width: 100%; 
+    width: 64px;
+    height: 64px;
+    border-radius: 2px;
+    margin: 8px;
+    background-color: black;
   }
+
+.mid-right-column {
+    width: 360px;
+    height: 365px;
+    text-align: justify;
+
+}
+
+
+.right-column {
+    width: 144px;
+    height: 176px;
+}
+
+
   
-  .track-us {
-    max-width: 300px;
-  }
-  
-  .minions-content {
-    max-width: 600px;
-  }
+
+.right-column-button {
+    width: 32px;
+    height: 32px;
+
+    
+}
+
+.email-input {
+    width: 144px;
+    height: 32px
+}
