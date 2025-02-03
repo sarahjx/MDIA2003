@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 20px;
+    padding: 20px 0 0 0;
     background-color: var(--primary-bg-color);
     width: 100%;
   }
@@ -72,3 +72,32 @@
     opacity: 0.7; 
     padding: 0 10px;
   }
+
+  .hero {
+    background-image: url('../images/banner.png'); 
+    background-size: cover;
+    height: 530px;
+    padding: 20px;
+}
+
+.hero-buttons-container {
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+.hero-buttons {
+    height: 64px;
+    width: auto;
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.5); 
+    color: #000000;  
+    border: none;
+    font-size: 24px;
+    text-align: left;
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.hero-buttons:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
