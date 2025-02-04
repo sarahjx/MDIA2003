@@ -1,22 +1,24 @@
 :root {
     --primary-bg-color: #ffffff;
     --font-family: 'Ubuntu', sans-serif;
-    --max-width: 1200px;
-    --padding: 20px;
+    --max-width: 1200px; /* default for desktop */
     --nav-font-size: 16px;
     --color-1: #25C389; 
     --color-2: #FFB901; 
     --color-3: #DE6262; 
     --color-4: #19B2DE; 
     --color-5: #265787; 
-  }
-  
+}
+
 .site-body {
     font-family: var(--font-family);
+    margin: 0 auto;
+}
+
+.header-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 var(--padding);
-  }
+}
 
 .site-header {
     display: flex;
@@ -25,14 +27,27 @@
     padding: 20px 0 0 0;
     background-color: var(--primary-bg-color);
     width: 100%;
-  }
+}
 
 .site-title {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 500;
     color: #4D4D4D;
     margin-bottom: 0;
-  }
+}
+
+.metrolics-logo {
+    width: 16px;  
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.logo-color-1 { fill: var(--color-1); } 
+.logo-color-2 { fill: var(--color-2); } 
+.logo-color-3 { fill: var(--color-3); } 
+.logo-color-4 { fill: var(--color-4); } 
+.logo-color-5 { fill: var(--color-5); } 
 
 .main-nav ul {
     list-style: none;
@@ -40,14 +55,14 @@
     padding: 0;
     display: flex;
     width: 100%;
-  }
-  
+}
+
 .main-nav li {
     height: 80px; 
     display: flex;
     align-items: flex-end;
-  }
-  
+}
+
 .main-nav a {
     display: block;
     width: 134px;
@@ -59,7 +74,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-  }
+}
 
 .main-nav li:nth-child(1) a { background-color: var(--color-1); }
 .main-nav li:nth-child(2) a { background-color: var(--color-2); }
@@ -71,13 +86,19 @@
     font-weight: 300; 
     opacity: 0.7; 
     padding: 0 10px;
-  }
+}
 
-  .hero {
+.hero-container {
+    background-color: #EBEBEB;
+}
+
+.hero {
     background-image: url('../images/banner.png'); 
     background-size: cover;
     height: 530px;
-    padding: 20px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-top: 50px;
 }
 
 .hero-buttons-container {
