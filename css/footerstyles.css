@@ -179,3 +179,46 @@
     fill: #ffffff;
 }
 
+.color-bar {
+    display: flex;
+}
+.color-bar div {
+    width: 55px;
+    height: 17px;
+    background-color: #ffffff;
+    border-color: #f6679c;
+        border-radius: 2px;
+    }
+    
+    /* tablet */
+    @media screen and (max-width: 632px){
+        .site-footer{
+            margin: 0;
+            border: 17px
+        }
+
+        .left-column{
+            width: 292px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .mid-left-column{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .column-images{
+            display: grid;
+            width: 292px;
+            grid-template-columns: repeat(4, 70px);  
+            grid-template-rows: repeat(2, 70px);
+            
+        }
+        .right-column{
+            width: 188px;
+        }
+        .email-signup button{
+            display: flex;
+            justify-self: end
+
+        }
+    }
