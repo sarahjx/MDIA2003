@@ -1,28 +1,41 @@
 
 /* desktop */
 :root {
-    --footer-font-family: normal 12px "Ubuntu";
-    --footer-font-color: white;
+    --myriad-pro: 400 normal "Myriad Pro", sans-serif;
+    --footer-font-family: normal 12px "Ubuntu" ;
+    --footer-content-font-color: #ffffff;
+    --footer-background-color: #0e2e4e;
 }
 
 .site-footer{
-    margin-left: 208px ;
-    margin-right: 208px;
- 
-
+    border-left: 208px solid ;
+    border-right: 208px solid;
+    background-color: var(--footer-background-color);
+    border-color: var(--footer-background-color)
+    
 }
 
 .footer-subtitle{
     font: 500 15px "Ubuntu", sans-serif;
 }
+.left-column .footer-subtitle {
+    color: #ffb901;
+}
+.mid-left-column .footer-subtitle{
+    color: #de6262;
+}
+.mid-right-column .footer-subtitle {
+    color: #19b2de;
+}
+.right-column .footer-subtitle {
+    color: #ffffff
+}
+
 
 .member-profile{
     display: flex;
-
     width: auto;
     margin: auto;
-  
-    background-color: green;
 
 }
 .member-profile img{
@@ -38,9 +51,9 @@
     width: 546px;
     height: auto;
     font: var(--footer-font-family);
-    text-align: ; /* Align the text to the left */
-    display: flex; /* Enable flexbox */
-    align-items: center; /* Vertically center the text */
+    color: var(--footer-content-font-color);
+    display: flex; 
+    align-items: center; 
     justify-content: flex-start;
 }
 
@@ -62,8 +75,10 @@
     height: auto;
 
 }
+
 .footer-description {
     font: var(--footer-font-family);
+    color: var(--footer-content-font-color);
 }
 
 .mid-left-column {
@@ -97,26 +112,70 @@
 }
 .mid-right-column p {
     font: 700 9px "Open Sans", sans-serif;
+    color: var(--footer-content-font-color);
     text-align: justify;
 }
-
+.mid-right-column a {
+    color: #1bade6;
+}
 
 .right-column {
     width: 144px;
     height: auto;
 }
 
-
-  
-
 .right-column-button {
     width: 32px;
-    height: 32px;
-
-    
+    height: 32px; 
+    border: transparent;
+    border-radius: 2px;   
+}
+.right-column-button:nth-of-type(1) {
+    background-color: #527cc4;
+}
+.right-column-button:nth-of-type(2) {
+    background-color: #e46145;
+}
+.right-column-button:nth-of-type(3) {
+    background-color: #00b0e2;
+}
+.right-column-button:nth-of-type(4) {
+    background-color: #f6679c;
+}
+.right-column-button:nth-of-type(5) {
+    background-color: #ffb901;
 }
 
+
+
+.email-signup{
+    display: flex;
+    background-color: #de6262;
+    height: 32px;
+    border-radius: 2px;
+
+}
+.email-signup button {
+    width: 32px;
+    height: 32px; 
+    background-color: #ffb901;
+    border-color: transparent;
+    border-radius: 2px;
+}
 .email-input {
-    width: 144px;
-    height: 32px
+    width: 112px;
+    height: 25px;
+    background-color: transparent;
+    border-color: transparent;
 }  
+.email-input::placeholder {
+    font: var(--myriad-pro);
+    color: #ffffff;
+}
+.email-signup svg {
+    height: 20px;
+    width: auto;
+    margin: auto;
+    fill: #ffffff;
+}
+
