@@ -49,14 +49,19 @@
 }
 .member-profile figcaption{
     width: 546px;
-    height: auto;
+    height: 72px;
     font: var(--footer-font-family);
     color: var(--footer-content-font-color);
     display: flex; 
     align-items: center; 
-    justify-content: flex-start;
+    padding-top: 50px;
 }
-
+.footer-line {
+    width: 118px;
+    height: 3px;
+    background-color: #ffb901;
+    margin-left: 185px;
+}
 
 .footer-column-container {
     display: flex;
