@@ -82,6 +82,15 @@
 .main-nav li:nth-child(4) a { background-color: var(--color-4); }
 .main-nav li:nth-child(5) a { background-color: var(--color-5); }
 
+.main-nav a {
+    transition: background-color 0.3s ease; 
+}
+
+.main-nav a:hover {
+    background-color: #F0F08C !important;
+    color: #0057C2;
+}
+
 .arrow {
     font-weight: 300; 
     opacity: 0.7; 
@@ -102,21 +111,54 @@
 }
 
 .hero-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
     margin-top: 200px;
     margin-left: 30px;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: center;
+}
+
+.button-bar {
+    display: inline-block;
+    width: 8px;
+    height: 64px;
+    margin-bottom: 5px;
+}
+
+.color-1 path {
+    fill: var(--color-5);
+}
+
+.color-2 path {
+    fill: var(--color-3);
+}
+
+.color-3 path {
+    fill: var(--color-2);
 }
 
 .hero-buttons {
     height: 64px;
     width: auto;
-    padding: 20px; 
-    background: rgba(255, 255, 255, 0.5); 
-    color: #000000;  
+    background: rgba(255, 255, 255, 0.8); 
     border: none;
+    font-family: var(--font-family);
     font-size: 24px;
+    font-weight: 500;  
+    color: #3C3C3C;
     text-align: left;
-    display: block; 
+    display: inline-block; 
     margin-bottom: 5px;
+}
+
+.hero-buttons {
+    transition: background-color 0.3s ease; 
 }
 
 .hero-buttons:hover {
