@@ -18,7 +18,7 @@
 }
 
 /* Desktop (1440px and above) */
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
     :root {
         --max-width: 1200px; 
     }
@@ -141,7 +141,7 @@
 
     .button-wrapper {
         display: flex;
-        flex-direction: center;
+        align-items: center;
     }
 
     .button-bar {
@@ -174,3 +174,65 @@
         background-color: rgba(255, 255, 255, 1);
     }
 }
+
+/* Tablet (632px and below) */
+@media screen and (max-width: 632px) {
+    :root {
+        --max-width: 600px;
+    }
+
+    .site-header {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 32px;
+        margin: 10px 0 30px;
+    }
+
+    .metrolics-logo {
+        width: 24px; 
+        margin-bottom: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: row; 
+        max-width: var(--max-width);
+    }
+
+    .main-nav li {
+        height: 64px;
+    }
+
+    .main-nav a {
+        width: 126.4px;
+        height: 64px;
+    }
+
+    .hero {
+        background-size: 632px 320px;
+    }
+
+
+/* Mobile (432px and below) */
+@media screen and (max-width: 432px) {
+    :root {
+        --max-width: 400px;
+    }
+
+    .site-header {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .hero {
+        display: none;
+    }
+} }
