@@ -48,7 +48,6 @@
 
 }
 
-
 .work-date {
     background-color: #d8605f;
     text-align: center;
@@ -100,7 +99,18 @@
       .service-description {
         text-align: justify;
       }
-      
+    /* latest news */
+    .latest-work-gallery {
+        width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .latest-work-main {
+        width: 60;
+        float: left;
+        margin: 1% 1%;
+        padding: 0px;
+    }
 }
 
 /* mobile */
@@ -114,6 +124,7 @@
         list-style: none;
         padding:0px;
         border: 0px;
+    
 
     }
     .service-item {
@@ -127,5 +138,25 @@
     .service-description {
         float: right;
     }
+    /* latest-works */
+    .latest-work-gallery {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        list-style: none;
+        padding:0px;
+        border: 0px;
+    }
+    .work-date {
+        background-color: #d8605f;
+        text-align: center;
+        max-width: 56px;
+        max-height: 34.28px;
+        line-height: 18.38px;
+        color: #f0f0f0;
+        position: absolute;
+        top: 0%;
+    }
 }
-
