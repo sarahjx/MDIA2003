@@ -125,7 +125,26 @@
         align-items: center;
         gap: 10px;        
     }
-  
+    .kiritaLogo {
+        width: 147px;
+        height: 49px;
+    }
+    .inkscapeLogo {
+        width: 113px;
+        height: 160px;
+    }
+    .godotLogo {
+        width: 158px;
+        height: 64px;
+    }
+  .blenderLogo {
+    width: 159px;
+    height: 42.7px;
+  }
+  .penpotLogo {
+    width: 143px;
+    height: 44px;
+  }
 /* tablet screen */
 @media screen and (max-width: 632px) {
     .body-title {
@@ -146,8 +165,7 @@
       }
       
       .service-item {
-        background-color: #f0f0f0;
-        margin: 0 auto; 
+        margin: 0; 
         width: fit-content;
       }
       .service-title, .service-description {
@@ -197,29 +215,27 @@
     .body-title {
         text-align: center;
         margin-left: 16px;
-        margin-right: 16px;
+        margin-right: 32px;
     }
-    
     .services-list {
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        flex-direction: column;
-        margin-left: 16px;
-        margin-right: 16px;
-        list-style: none;
-        padding:0px;
-        border: 0px;
+        display: grid;
+        grid-template-columns: 1fr ; 
+        gap: 16px; 
+        width: 100%; 
+    }
+    .service-title {
+        margin: 0%;
+    }
+    .service-description {
+        margin: 0%;
     }
     .service-item {
         width: fit-content;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin: 0;
+        padding: 0%;
     }
-    .service-item svg {
+    .services-list svg {
         float: left;
-    }
-    .service-description {
-        float: right;
     }
     /* latest-works */
     .latest-work-gallery {
@@ -255,11 +271,8 @@
     }
 
     /* client */
-    .client-list {
+   .past-clients {
         display: none;
-    }
-    .client-list h2 h3 {
-        display: none;
-    }
+   }
 
 }
