@@ -10,8 +10,10 @@
 .site-footer{
     border-left: 208px solid ;
     border-right: 208px solid;
+    border-bottom: 150px solid;
     background-color: var(--footer-background-color);
-    border-color: var(--footer-background-color)
+    border-color: var(--footer-background-color);
+    
     
 }
 
@@ -70,7 +72,7 @@
     margin: 0;
   }
 .footer-column-container section{
-    margin: 2rem
+    
 }
 
 
@@ -192,38 +194,39 @@
     height: 17px;
     background-color: #ffffff;
     border-color: #f6679c;
-        border-radius: 2px;
+    border-radius: 2px;
     }
-    
-    /* tablet */
-    @media screen and (max-width: 632px){
-        .site-footer{
-            margin: 0;
-            border: 17px
-        }
 
-        .left-column{
-            width: 292px;
-            margin-left: 0;
-            margin-right: 0;
-        }
-        .mid-left-column{
-            margin-left: 0;
-            margin-right: 0;
-        }
-        .column-images{
-            display: grid;
-            width: 292px;
-            grid-template-columns: repeat(4, 70px);  
-            grid-template-rows: repeat(2, 70px);
-            
-        }
-        .right-column{
-            width: 188px;
-        }
-        .email-signup button{
-            display: flex;
-            justify-self: end
+.background-colorbar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
 
-        }
-    }
+
+}
+.background-colorbar div {
+    background-color: white;
+    width: 54.4px; 
+    height: 17px;
+}
+.background-colorbar div:nth-child(1) {
+    background-color: #25C389; 
+  }
+  
+  .background-colorbar div:nth-child(2) {
+    background-color: #FFB901; 
+  }
+  
+  .background-colorbar div:nth-child(3) {
+    background-color: #DE6262; 
+  }
+  
+  .background-colorbar div:nth-child(4) {
+    background-color: #1691BD; 
+  }
+  
+  .background-colorbar div:nth-child(5) {
+    background-color: #166BA2; 
+  }
+
+
