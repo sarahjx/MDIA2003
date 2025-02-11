@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Metrolics</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footerstyles.css">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/jkw5xen.css">
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -25,137 +27,157 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-  <!-- add class to header and change Metrolics h1. It shouldn't be h1. -->
-  <header>
-    <h1>Metrolics</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Portfolio</a></li>
-        <li><a href="/">Blog</a></li>
-        <li><a href="/">Quo Vadis?</a></li>
-        <li><a href="/">Let's Chat</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <div class="hero">
-        <button class="hero-buttons">Metro Style</button>
-        <button class="hero-buttons">Quick on the feet</button>
-        <button class="hero-buttons">Metro Styling reinvented</button>
+<body class="site-body">
+  <div class="header-container">
+    <header class="site-header">
+      <p class="site-title">Metrolics <svg class="metrolics-logo" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.6667 0H16V5.33318H10.6667V0Z" class="logo-color-1"/>
+        <path d="M0 0H5.33334V5.33322H0V0Z" class="logo-color-2"/>
+        <path d="M5.33337 5.33318H10.6667V10.6664H5.33337V5.33318Z" class="logo-color-3"/>
+        <path d="M0 10.6664H5.33334V15.9996H0V10.6664Z" class="logo-color-4"/>
+        <path d="M10.6667 10.6664H16V15.9996H10.6667V10.6664Z" class="logo-color-5"/>
+    </svg>
+            
+    </p>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Portfolio <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Blog <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Quo Vadis? <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Let's Chat <span class="arrow">&gt;</span></a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main class="main-content">
+    <div class="hero-container">
+      <section class="hero">
+        <div class="hero-buttons-container">
+          
+          <div class="button-wrapper">
+            <svg class="button-bar color-1" width="8" height="64" viewBox="0 0 8 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H7.73481V64H0V0Z"/>
+          </svg>
+          <button class="hero-buttons">Metro Style</button>
+      </div>
+
+        <div class="button-wrapper">
+            <svg class="button-bar color-2" width="8" height="64" viewBox="0 0 8 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H7.73481V64H0V0Z"/>
+          </svg>
+          <button class="hero-buttons">Quick on the feet</button>
+        </div>
+
+        <div class="button-wrapper">
+              <svg class="button-bar color-3" width="8" height="64" viewBox="0 0 8 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H7.73481V64H0V0Z"/>
+            </svg>
+            <button class="hero-buttons">Metro Styling reinvented</button>
+          </div>
+          
+        </div>
+      </section>
     </div>
 
-    <h1>Hey Folks! We are the Metrolics team. It sports a responsive layout with a mobile layout theme.</h1>
-    <section>
+    <h1 class="body-title">Hey Folks! We are the Metrolics team. It sports a responsive layout with a mobile layout.theme.</h1>
+
+    <section class="intro">
       <h2 class="section-title">Things That We Do</h2>
       <h3 class="sub-section-title">Ask us what we can do for you</h3>
-      <ul class="services">
-        <li>
-          <img src="/" alt="/"/>
-          <h5>Web Solutions</h5>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+      <ul class="services-list">
+        <li class="service-item">
+          <img src="/" alt="Web Solutions"/>
+          <h4 class="service-title">Web Solutions</h4>
+          <p class="service-description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
         </li>
-        <li>
-          <img src="/" alt="/"/>
-          <h5>Web Solutions</h5>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+        <li class="service-item">
+          <img src="/" alt="Photography"/>
+          <h4 class="service-title">Photography</h4>
+          <p class="service-description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
         </li>
-        <li>
-          <img src="/" alt="/"/>
-          <h5>Web Solutions</h5>
-          <p>We are a fairly small, flexible design hiuyuhstudio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
-        </li>  
-        <li>
-          <img src="/" alt="/"/>
-          <p>Web Solutions</p>
-          <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+        <li class="service-item">
+          <img src="/" alt="App Development"/>
+          <h4 class="service-title">App Development</h4>
+          <p class="service-description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
         </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3 class="section-title">What's up lately</h3>
-      <h4 class="sub-section-title">Read up on our latest work</h4>
-      <article class="latest-works">
-        <a href="/">
-        <div class="date">
-          <p>29</p>
-          <p>Jan 2025</p>
-        </div>
-        <div class="work">
-          <h5>Sample Image Post</h5>
-          <p>Photography</p>
-        </div>
-      </a>
-      </article>
-      <article class="latest-works">
-        <a href="/">
-        <div class="date">
-          <p>29</p>
-          <p>Jan 2025</p>
-        </div>
-        <div class="work">
-          <h5>Sample image post</h5>
-          <p>Photography</p>
-        </div>
-      </a>
-      </article>
-      <article class="latest-works">
-        <a href="/">
-        <div class="date">
-          <p>29</p>
-          <p>Jan 2025</p>
-        </div>
-        <div class="work">
-          <h5>Sample image post</h5>
-          <p>Photography</p>
-        </div>
-      </a>
-      </article>
-    </section>
-
-    <section>
-      <h3 class="section-title">Our best work. Period.</h3>
-      <h4 class="sub-section-title">Client happy? We are happy.</h4>
-      <ul class="best-work">
-        <li>
-          <a href="/"><img src="/" alt=""/></a>
-        </li>
-        <li>
-          <a href="/"><img src="/" alt=""/></a>
-        </li>
-        <li>
-          <a href="/"><img src="/" alt=""/></a>
-        </li>
-        <li>
-          <a href="/"><img src="/" alt=""/></a>
-        </li>
-        <li>
-          <a href="/"><img src="/" alt="/"/></a>
-        </li>
-        <li>
-          <a href="/"><img src="/" alt="/"/></a>
+        <li class="service-item">
+          <img src="/" alt="UX Design"/>
+          <h4 class="service-title">UX Design</h4>
+          <p class="service-description">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h3 class="section-title">Satisfaction Guaranteed</h3>
-      <h4 class="sub-section-title">Past clients stoked with our work. We are not happy until YOU are happy.</h4>
-      <a href="/" class="clients"><img src="/" alt=""/></a>
-      <a href="/" class="clients"><img src="/" alt=""/></a>
-      <a href="/" class="clients"><img src="/" alt=""/></a>
-      <a href="/" class="clients"><img src="/" alt=""/></a>
-      <a href="/" class="clients"><img src="/" alt=""/></a>
+    <section class="latest-news">
+      <h2 class="section-title">What's up lately</h2>
+      <h3 class="sub-section-title">Read up on our latest work</h3>
+      <article class="latest-works">
+        <a href="/">
+        <div class="work-date">
+          <p>29</p>
+          <p>Jan 2025</p>
+        </div>
+        <div class="work-details">
+          <h4 class="work-title">Sample Image Post</h4>
+          <p class="work-category">Photography</p>
+        </div>
+      </a>
+      </article>
+      <article class="latest-works">
+        <a href="/">
+
+          <div class="work-date">
+            <p>29</p>
+            <p>Jan 2025</p>
+          </div>
+          <div class="work-details">
+            <h4 class="work-title">Sample Image Post</h4>
+            <p class="work-category">Photography</p>
+          </div>
+        </a>
+      </article>
+      <article class="latest-works">
+        <a href="/">
+          <div class="work-date">
+            <p>29</p>
+            <p>Jan 2025</p>
+          </div>
+          <div class="work-details">
+            <h4 class="work-title">Sample Image Post</h4>
+            <p class="work-category">Photography</p>
+          </div>
+        </a>
+      </article>
+    </section>
+
+    <section class="best-work">
+      <h2 class="section-title">Our best work. Period.</h2>
+      <h3 class="sub-section-title">Client happy? We are happy.</h3>
+      <div class="work-gallery">
+        <div class="work-item"><a href="/"><img src="" alt="Project"></a></div>
+        <div class="work-item"><a href="/"><img src="" alt="Project"></a></div>
+        <div class="work-item"><a href="/"><img src="" alt="Project"></a></div>
+        <div class="work-item"><a href="/"><img src="" alt="Project"></a></div>
+        <div class="work-item"><a href="/"><img src="" alt="Project"></a></div>
+        <div class="work-item"><a href="/"><img src="" alt="Project"></a></div>
+      </div>
+    </section>
+
+    <section class="past-clients">
+      <h2 class="section-title">Satisfaction Guaranteed</h2>
+      <h3 class="sub-section-title">Past clients stoked with our work. We are not happy until YOU are happy.</h3>
+      <div class="clients"><a href="/"><img src="" alt="Client"></a></div>
+      <div class="clients"><a href="/"><img src="" alt="Client"></a></div>
+      <div class="clients"><a href="/"><img src="" alt="Client"></a></div>
+      <div class="clients"><a href="/"><img src="" alt="Client"></a></div>
+      <div class="clients"><a href="/"><img src="" alt="Client"></a></div>
     </section>
   </main>
 
 
-
-
-  
   <footer class="site-footer"> 
     <figure class="member-profile">
       <img src="https://s3-alpha-sig.figma.com/img/87e6/68f1/5f35aacbb73c4f1a013d22e3d90bf0ea?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qhcKqPsr28~QJN~NOjni6Z~-VsfgyrbEmtDloRyXJrmHIcVVcKLtWGpK1G3J~ioO75SgVcWR0yO8ckNsLR6S2~S9VJYAmZCJGy7pWSKArGqoSvHtzHtWWKSwZQNLw3QfOjS3G-~5TYzYeeUoj49pX1~SFDpzcMEp~konUilRKyq6PuMFZm03tzw7m92iq9nGHhM-~ZQB8rueC-qzHbd4xDA0DdVa5-k7AC5UxG0voWI7Fp7Ho0lXWSmot9yXR-tmAc4T6HoInCZRqcsPTpyRp7wfbk2GUTJVsM6b7vfLjZoVFJP0J32w6lgJC3CdU1s0s5LLOoR1tLxk-a5e9NmGRQ__" alt="alf.png"/>
@@ -220,6 +242,7 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H232V1H0Z" fill="#FFB901"/>
           </svg>
           
+
         <p><a href="https://mastodon.social/@Minions">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
         <p><a href="https://mastodon.social/@Minions">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
         <p><a href="https://mastodon.social/@Minions">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
@@ -244,6 +267,15 @@
             </svg>
             </button>
         </div>
+
+      <section class="track-us">
+        <h3 class="footer-subtitle">Track us!</h3>
+        <button class="track-us-button"></button>
+        <button class="track-us-button"></button>
+        <button class="track-us-button"></button>
+        <button class="track-us-button"></button>
+        <button class="track-us-button"></button>
+        <input type="email" placeholder="Enter your email..." class="email-input" />
       </section>
       <div class="background-colorbar">
         <div></div>
