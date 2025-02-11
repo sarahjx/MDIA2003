@@ -1,0 +1,232 @@
+
+/* desktop */
+:root {
+    --myriad-pro: 400 normal "Myriad Pro", sans-serif;
+    --footer-font-family: normal 12px "Ubuntu" ;
+    --footer-content-font-color: #ffffff;
+    --footer-background-color: #0e2e4e;
+}
+
+.site-footer{
+    border-left: 208px solid ;
+    border-right: 208px solid;
+    border-bottom: 150px solid;
+    background-color: var(--footer-background-color);
+    border-color: var(--footer-background-color);
+    
+    
+}
+
+.footer-subtitle{
+    font: 500 15px "Ubuntu", sans-serif;
+}
+.left-column .footer-subtitle {
+    color: #ffb901;
+}
+.mid-left-column .footer-subtitle{
+    color: #de6262;
+}
+.mid-right-column .footer-subtitle {
+    color: #19b2de;
+}
+.right-column .footer-subtitle {
+    color: #ffffff
+}
+
+
+.member-profile{
+    display: flex;
+    width: auto;
+    margin: auto;
+
+}
+.member-profile img{
+    width: 118px;
+    height: 118px;
+    border-radius: 100%;
+    background-color: cadetblue;
+    margin: 32px;
+    
+
+}
+.member-profile figcaption{
+    width: 546px;
+    height: 72px;
+    font: var(--footer-font-family);
+    color: var(--footer-content-font-color);
+    display: flex; 
+    align-items: center; 
+    padding-top: 50px;
+}
+.footer-line {
+    width: 118px;
+    height: 3px;
+    background-color: #ffb901;
+    margin-left: 185px;
+}
+
+.footer-column-container {
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+.footer-column-container section{
+    
+}
+
+
+.left-column {
+    
+    width: 232px;
+    height: auto;
+
+}
+
+.footer-description {
+    font: var(--footer-font-family);
+    color: var(--footer-content-font-color);
+}
+
+.mid-left-column {
+    width: 232px;
+    height: auto;    
+}
+
+    
+.column-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 232px;
+    height: 224px;
+
+  }
+  
+  .column-images div {
+
+    width: 64px;
+    height: 64px;
+    border-radius: 2px;
+    margin: 8px;
+    background-color: black;
+  }
+
+.mid-right-column {
+    width: 320px;
+    height: auto;
+
+}
+.mid-right-column p {
+    font: 700 9px "Open Sans", sans-serif;
+    color: var(--footer-content-font-color);
+    text-align: justify;
+}
+.mid-right-column a {
+    color: #1bade6;
+}
+
+.right-column {
+    width: 144px;
+    height: auto;
+}
+
+.right-column-button {
+    width: 32px;
+    height: 32px; 
+    border: transparent;
+    border-radius: 2px;   
+}
+.right-column-button:nth-of-type(1) {
+    background-color: #527cc4;
+}
+.right-column-button:nth-of-type(2) {
+    background-color: #e46145;
+}
+.right-column-button:nth-of-type(3) {
+    background-color: #00b0e2;
+}
+.right-column-button:nth-of-type(4) {
+    background-color: #f6679c;
+}
+.right-column-button:nth-of-type(5) {
+    background-color: #ffb901;
+}
+
+
+
+.email-signup{
+    display: flex;
+    background-color: #de6262;
+    height: 32px;
+    border-radius: 2px;
+
+}
+.email-signup button {
+    width: 32px;
+    height: 32px; 
+    background-color: #ffb901;
+    border-color: transparent;
+    border-radius: 2px;
+}
+.email-input {
+    width: 112px;
+    height: 25px;
+    background-color: transparent;
+    border-color: transparent;
+}  
+.email-input::placeholder {
+    font: var(--myriad-pro);
+    color: #ffffff;
+}
+.email-signup svg {
+    height: 20px;
+    width: auto;
+    margin: auto;
+    fill: #ffffff;
+}
+
+.color-bar {
+    display: flex;
+}
+.color-bar div {
+    width: 55px;
+    height: 17px;
+    background-color: #ffffff;
+    border-color: #f6679c;
+    border-radius: 2px;
+    }
+
+.background-colorbar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+
+
+}
+.background-colorbar div {
+    background-color: white;
+    width: 54.4px; 
+    height: 17px;
+}
+.background-colorbar div:nth-child(1) {
+    background-color: #25C389; 
+  }
+  
+  .background-colorbar div:nth-child(2) {
+    background-color: #FFB901; 
+  }
+  
+  .background-colorbar div:nth-child(3) {
+    background-color: #DE6262; 
+  }
+  
+  .background-colorbar div:nth-child(4) {
+    background-color: #1691BD; 
+  }
+  
+  .background-colorbar div:nth-child(5) {
+    background-color: #166BA2; 
+  }
+
+
