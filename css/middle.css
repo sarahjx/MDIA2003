@@ -68,12 +68,14 @@
         position: relative;
         margin-top: 32px;
         margin-bottom: 50px;
+
     }
 
     
     .latest-work-image {
         width: 320px;
         height: 256px;
+        border-radius: 2px;
     }
 
     .work-date-container {
@@ -85,6 +87,7 @@
         color: #f0f0f0;
         position: absolute;
         top: 0%;
+        border-top-left-radius: 2px;
     }
     .date {
         font-weight: var(--middle-font-weight);
@@ -93,6 +96,7 @@
         padding-top: 4px;
         padding-bottom: 0;
         height: 12px;
+  
     }
 
     .month-year {
@@ -111,6 +115,8 @@
         height: 48px;
         color: #f0f0f0;
         text-align: justify;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px ;
         
     }
 
@@ -121,6 +127,7 @@
         margin-top: 4px;
         margin-left: 15px;
         height: 16px;
+        color: white;
     }
 
     .work-category {
@@ -128,15 +135,28 @@
         font-size: 11px;
         margin-top: 5px;
         margin-left: 15px;
+        color: white;
     }
+    
+    .empty-square{
+        position: absolute;
+        background-color: #1596BD;
+        width: 28px;
+        height: 28px;
+        top: 20%;
+        left: 87%
+        
+    }
+
 
     /* gallery */
     .work-item img {
         width: 320px;
         height: 256px;
+        border-radius: 2px;
     }
 
-    .work-item-container {
+    .work-items-container {
         margin-right: 208px;
         margin-left: 208px;
         margin-bottom: 50px;
@@ -145,6 +165,31 @@
         grid-template-columns: repeat(3,320px);  
         grid-template-rows: repeat(2, 256px); 
     }
+
+    .work-item {
+        position: relative;
+    }
+
+    .overlay {
+        border: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(25, 178, 222, 0.83);
+        opacity: 0;
+        transition: transition: background-color 0.3s ease; 
+    }
+    .overlay-text {
+        position: absolute;
+        top: 80%
+    }
+
+    .work-item:hover .overlay {
+        opacity: 1;
+    }
+    
     /* clients */
     .client-list {
         display: flex;
@@ -216,11 +261,13 @@
         text-align: justify;
       }
     /* latest news */
-    .latest-work-gallery {
+    .latest-work-container {
         width: 100%;
         margin-left: 16px;
         margin-right: 16px;
     }
+ 
+
     .latest-work-main {
         grid-template-columns: 1fr;
         width: 600px;
