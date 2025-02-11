@@ -2,12 +2,19 @@
 <html class="no-js" lang="EN">
   <!--  testing  -->
 
-<head>
+<>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Metrolics</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footerstyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/jkw5xen.css">
   <link rel="stylesheet" href="css/middle.css">
+
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -24,26 +31,60 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
+
 <body class="site-body">
-  <header class="site-header">
-    <p class="site-title">Metrolics</p>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Portfolio</a></li>
-        <li><a href="/">Blog</a></li>
-        <li><a href="/">Quo Vadis?</a></li>
-        <li><a href="/">Let's Chat</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="header-container">
+    <header class="site-header">
+      <p class="site-title">Metrolics <svg class="metrolics-logo" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.6667 0H16V5.33318H10.6667V0Z" class="logo-color-1"/>
+        <path d="M0 0H5.33334V5.33322H0V0Z" class="logo-color-2"/>
+        <path d="M5.33337 5.33318H10.6667V10.6664H5.33337V5.33318Z" class="logo-color-3"/>
+        <path d="M0 10.6664H5.33334V15.9996H0V10.6664Z" class="logo-color-4"/>
+        <path d="M10.6667 10.6664H16V15.9996H10.6667V10.6664Z" class="logo-color-5"/>
+    </svg>
+            
+    </p>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Portfolio <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Blog <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Quo Vadis? <span class="arrow">&gt;</span></a></li>
+          <li><a href="/">Let's Chat <span class="arrow">&gt;</span></a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
   <main class="main-content">
-    <section class="hero">
-        <button class="hero-buttons">Metro Style</button>
-        <button class="hero-buttons">Quick on the feet</button>
-        <button class="hero-buttons">Metro Styling reinvented</button>
+    <div class="hero-container">
+      <section class="hero">
+        <div class="hero-buttons-container">
+          
+          <div class="button-wrapper">
+            <svg class="button-bar color-1" width="8" height="64" viewBox="0 0 8 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H7.73481V64H0V0Z"/>
+          </svg>
+          <button class="hero-buttons">Metro Style</button>
+      </div>
+
+        <div class="button-wrapper">
+            <svg class="button-bar color-2" width="8" height="64" viewBox="0 0 8 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H7.73481V64H0V0Z"/>
+          </svg>
+          <button class="hero-buttons">Quick on the feet</button>
+        </div>
+
+        <div class="button-wrapper">
+              <svg class="button-bar color-3" width="8" height="64" viewBox="0 0 8 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H7.73481V64H0V0Z"/>
+            </svg>
+            <button class="hero-buttons">Metro Styling reinvented</button>
+          </div>
+          
+        </div>
       </section>
+    </div>
 
     <h1 class="body-title">Hey Folks! We are the <span class="highlight">Metrolics</span> design studio. <br>With our help, the sky's the limit to express your creativity!</h1>
 
@@ -89,9 +130,26 @@
     <section class="latest-news">
       <h2 class="section-title">What's up lately</h2>
       <h3 class="sub-section-title">Read up on our latest work</h3>
-      <div class="latest-work-gallery">
+
+<!--       <div class="latest-work-gallery">
         <article class="latest-works-main">
           <img src="/images/sampleimage.png" alt="/" class="latest-work-image"/>
+
+      <article class="latest-works">
+        <a href="/">
+        <div class="work-date">
+          <p>29</p>
+          <p>Jan 2025</p>
+        </div>
+        <div class="work-details">
+          <h4 class="work-title">Sample Image Post</h4>
+          <p class="work-category">Photography</p>
+        </div>
+      </a>
+      </article>
+      <article class="latest-works">
+        <a href="/">
+ --> 
           <div class="work-date">
             <p>29</p>
             <span class="work-month-year">Jan 2025</span>
@@ -152,52 +210,97 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <figure class="team-member">
-      <img class="team-member-photo" src="/" alt="Team Member Photo"/>
-      <figcaption class="team-member-caption">Alf has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</figcaption>
+
+  <footer class="site-footer"> 
+    <figure class="member-profile">
+      <img src="https://s3-alpha-sig.figma.com/img/87e6/68f1/5f35aacbb73c4f1a013d22e3d90bf0ea?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qhcKqPsr28~QJN~NOjni6Z~-VsfgyrbEmtDloRyXJrmHIcVVcKLtWGpK1G3J~ioO75SgVcWR0yO8ckNsLR6S2~S9VJYAmZCJGy7pWSKArGqoSvHtzHtWWKSwZQNLw3QfOjS3G-~5TYzYeeUoj49pX1~SFDpzcMEp~konUilRKyq6PuMFZm03tzw7m92iq9nGHhM-~ZQB8rueC-qzHbd4xDA0DdVa5-k7AC5UxG0voWI7Fp7Ho0lXWSmot9yXR-tmAc4T6HoInCZRqcsPTpyRp7wfbk2GUTJVsM6b7vfLjZoVFJP0J32w6lgJC3CdU1s0s5LLOoR1tLxk-a5e9NmGRQ__" alt="alf.png"/>
+      <figcaption>Alf has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</figcaption>
+      
     </figure>
-    <div class="footer-content">
-      <section class="about-us">
+    <hr class="footer-line">
+    
+    <div class="footer-column-container">
+      
+      <section class="left-column">
         <h3 class="footer-subtitle">About Us</h3>
+        <svg width="232" height="6" viewBox="0 0 232 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1107 0.719482H23.0259L18.7086 5.03675L15.1107 0.719482Z" fill="#21C183"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H232V1H0Z" fill="#21C183"/>
+          </svg>          
+        
         <p class="footer-description">Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. 
-          Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </p>
+          <br>
+          <br>Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee. </p>
       </section>
-      <section class="footer-column">
+
+      <section class="mid-left-column">
         <h3 class="footer-subtitle">Instagram</h3>
-        <ul class="column-posts">
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-          <li>
-            <a href="/"><img src="" alt="/"></a>
-          </li>
-        </ul>
+        <svg width="232" height="6" viewBox="0 0 232 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1107 0.719482H23.0259L18.7086 5.03675L15.1107 0.719482Z" fill="#19B2DE"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H232V1H0Z" fill="#19B2DE"/>
+          </svg>
+          
+        <div class="column-images">
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+          <div>
+            <a href="/"><img src="https://s3-alpha-sig.figma.com/img/a1e6/7b2d/3c8bb07d5fb83b2f349484c7c0fd2724?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ez2Fdp5zx70DgAKAkCheGRGHXJpGSvK6BAcGld5xhzEj7SZttha4VSl5-lfsGJ3SAzQwR67L-axJocrRFGLNh72ueA11MIaapcAOAzHkAcysjZm9fKII3ppuF1wKO152Ywa80PGExD6qIZWJutflgsr935UQIEl5d2J3R3HvPCJ6QusNFyyOiADbNDnY9Ar7IFm3hAQID2s6JsUrn2-l-C8oVPTF51SPNGRemVHl6QsB6VtdXtewgm0xRQYcGTGpJVBI9Z074BozesvuJTe0B771vh2kzJ9rw8QMyJN6qqYW3XbkauqKaiDKdpe9o~yoapI-cqxdWWvn9hf9NaGFkw__" alt="minion"/></a>
+          </div>
+        </div>
       </section>
-      <section class="mastodon">
+
+      <section class="mid-right-column">
         <h3 class="footer-subtitle">What's New on Mastodon</h3>
+        <svg width="232" height="6" viewBox="0 0 232 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1107 0.719482H23.0259L18.7085 5.03675L15.1107 0.719482Z" fill="#FFB901"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H232V1H0Z" fill="#FFB901"/>
+          </svg>
+          
+
         <p><a href="https://mastodon.social/@Minions">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
         <p><a href="https://mastodon.social/@Minions">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
         <p><a href="https://mastodon.social/@Minions">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
       </section>
+
+      <section class="right-column">
+        <h3 class="footer-subtitle">Track us!</h3>
+        <svg width="146" height="8" viewBox="0 0 146 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7513 0.608887H22.4009L18.2284 7.15923L14.7513 0.608887Z" fill="#19B2DE"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1V0H146V1H0Z" fill="#19B2DE"/>
+          </svg>
+           
+        <button class="right-column-button"></button>
+        <button class="right-column-button"></button>
+        <button class="right-column-button"></button>
+        <button class="right-column-button"></button>
+        <button class="right-column-button"></button>
+        <div class="email-signup">
+          <input type="email" placeholder="Enter your email..." class="email-input" />
+          <button><svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.7188 0.681919C18.9397 0.842634 19.0301 1.05692 18.99 1.32478L16.4185 16.7533C16.385 16.9475 16.2779 17.0982 16.0971 17.2054C16.0033 17.2589 15.8996 17.2857 15.7857 17.2857C15.7121 17.2857 15.6317 17.269 15.5446 17.2355L10.9944 15.3772L8.56362 18.3404C8.44308 18.4944 8.27902 18.5714 8.07143 18.5714C7.98438 18.5714 7.91071 18.558 7.85045 18.5312C7.72321 18.4844 7.61942 18.404 7.53906 18.2902C7.4654 18.183 7.42857 18.0625 7.42857 17.9286V14.423L16.1071 3.78571L5.36942 13.077L1.40179 11.4498C1.15402 11.356 1.02009 11.1719 1 10.8973C0.986607 10.6295 1.09375 10.4319 1.32143 10.3047L18.0357 0.66183C18.1362 0.601561 18.2433 0.571427 18.3571 0.571427C18.4911 0.571427 18.6116 0.608258 18.7188 0.681919Z"/>
+            </svg>
+            </button>
+        </div>
+
       <section class="track-us">
         <h3 class="footer-subtitle">Track us!</h3>
         <button class="track-us-button"></button>
@@ -207,7 +310,18 @@
         <button class="track-us-button"></button>
         <input type="email" placeholder="Enter your email..." class="email-input" />
       </section>
+      <div class="background-colorbar">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+
+
     </div>
+
   </footer>
 
   <script src="js/app.js"></script>
