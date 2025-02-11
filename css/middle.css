@@ -179,7 +179,7 @@
         height: 100%;
         background-color: rgba(25, 178, 222, 0.83);
         opacity: 0;
-        transition: transition: background-color 0.3s ease; 
+        transition: background-color 0.3s ease; 
     }
     .overlay-text {
         position: absolute;
@@ -230,6 +230,7 @@
     width: 143px;
     height: 44px;
   }
+
 /* tablet screen */
 @media screen and (max-width: 632px) {
     .body-title {
@@ -262,6 +263,8 @@
       }
     /* latest news */
     .latest-work-container {
+        display: grid;
+        grid-template-columns: 100% auto auto;
         width: 100%;
         margin-left: 16px;
         margin-right: 16px;
@@ -276,6 +279,26 @@
         margin-right: 16px;
         padding: 0px;
     }
+    .work-items-container {
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-bottom: 50px;
+        display: grid;
+        gap: 16px ;
+        grid-template-columns: repeat(2,292px);  
+        grid-template-rows: repeat(3, 256px); 
+    }
+    .work-item {
+        width: 292px;
+        height: 256px;
+        border-radius: 2px;
+    }
+    .work-item img {
+        width: 292px;
+        height: 256px;
+        border-radius: 2px;
+    }
+    
 
     /* work-gallery */
     .work-gallery {
@@ -336,7 +359,7 @@
         float: left;
     }
     /* latest-works */
-    .latest-work-gallery {
+    .latest-work-container {
         display: flex;
         grid-template-columns: 1fr 1fr;
         flex-direction: column;
