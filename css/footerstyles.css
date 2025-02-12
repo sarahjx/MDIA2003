@@ -7,13 +7,17 @@
     --footer-background-color: #0e2e4e;
 }
 
-.site-footer{
-    border-left: 208px solid ;
-    border-right: 208px solid;
-    border-bottom: 150px solid;
+.site-footer-container {
     background-color: var(--footer-background-color);
-    border-color: var(--footer-background-color);
     position: relative;
+}
+
+.site-footer{
+    margin: auto;
+    border-bottom: 150px solid;
+    border-color: var(--footer-background-color);
+    
+    max-width: 1024px;
     
 }
 
@@ -207,7 +211,8 @@
 
 .background-colorbar {
     position: absolute;
-    margin-top: 130px;
+    bottom: 0;
+    
     display: flex;
 }
 .background-colorbar div {
