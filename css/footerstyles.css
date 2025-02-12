@@ -46,6 +46,7 @@
     border-radius: 100%;
     background-color: cadetblue;
     margin: 32px;
+    margin-bottom: 0px;
     
 
 }
@@ -63,6 +64,8 @@
     height: 3px;
     background-color: #ffb901;
     margin-left: 185px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .footer-column-container {
@@ -71,9 +74,6 @@
     flex-wrap: wrap;
     margin: 0;
   }
-.footer-column-container section{
-    
-}
 
 
 .left-column {
@@ -92,7 +92,13 @@
     width: 232px;
     height: auto;    
 }
+.column-images img {
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
 
+}
     
 .column-images {
     display: grid;
@@ -100,17 +106,15 @@
     gap: 8px;
     width: 232px;
     height: 224px;
-
-  }
+}
   
-  .column-images div {
-
+.column-images div {
+    border: #e1e1e1 solid 1px;
     width: 64px;
     height: 64px;
     border-radius: 2px;
-    margin: 8px;
     background-color: black;
-  }
+}
 
 .mid-right-column {
     width: 320px;
@@ -177,12 +181,13 @@
 }  
 .email-input::placeholder {
     font: var(--myriad-pro);
+    font-size: 11px;
     color: #ffffff;
+    margin-left: 8.225px;
 }
 .email-signup svg {
-    height: 20px;
-    width: auto;
-    margin: auto;
+    width: 16px;
+    height: 17px;
     fill: #ffffff;
 }
 
@@ -202,11 +207,8 @@
 
 .background-colorbar {
     position: absolute;
-    bottom: -27.5%;
+    margin-top: 130px;
     display: flex;
-    
-
-
 }
 .background-colorbar div {
     background-color: white;
@@ -235,3 +237,214 @@
   }
 
 
+  /*tablet  */
+@media screen and (max-width: 632px) {
+    .site-footer {
+        width: 632px;
+        height: 834px;
+        border-left: 16px;
+        border-right: 16px;
+        border-bottom: 0px;
+    }
+    
+    .footer-subtitle {
+        margin: 0%;
+    }
+
+/* Top of footer */
+    .member-profile {
+        width: 616px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .member-profile img {
+        margin-bottom: 0px;
+    }
+    .member-profile figcaption {
+        width: 402px;
+        height: 90px;
+        line-height: 1.5;
+       
+    }
+    /* yellow line */
+    .footer-line {
+        width: 118px;
+        height: 3px;
+        margin-left: 185px;
+        margin-top: 0px;
+        border-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    /* rest of footer */
+    .footer-column-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 16px;
+    }
+    /* about us */
+    .left-column {
+        width: 292px;
+        height: 256px;
+    }
+    .footer-description {
+        line-height: 1.6;
+        width: 292px;
+        height: 246px;
+        margin-top: 0px;
+    }
+    .left-column svg {
+        width: 292px;
+    }
+    /* Instagram */
+    .mid-left-column {
+        width: 232px;
+        height: 183.04px; 
+        margin-top: 0px;
+        margin-left: -40px;
+    }
+    .mid-left-column h3 {
+        margin-left: -55px;
+
+    }
+    .mid-left-column svg {
+        width: 292px;
+        margin-left: -55px;
+
+    }
+    /* minion photos */
+    .column-images img {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+    }
+    .column-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 61px;
+        height: 64px;
+        padding: 0px;
+        margin-left: -55px;
+    }
+    /* Mastodon */
+    .mid-right-column {
+        margin-top: 34px;
+    }
+    .mid-right-column svg {
+        width: 232px;
+    }
+    .mid-right-column p {
+        width: 395px;
+        line-height: 14px;
+        word-spacing: 1.02px;
+        margin-top: 0px;
+    }
+    /* track us */
+    .right-column {
+        width: 188px;
+        height: 176px;
+        margin-top: 33px;
+    }
+    
+    .right-column-button {
+        width: 32px;
+        height: 32px; 
+        border-radius: 2px;
+        margin-bottom: 20px;
+        margin-top: 6px;
+        margin-right: 2.64px;
+    }
+    .email-input::placeholder ::placeholder {
+        font-size: 11px;
+    }
+    .email-signup button {
+        margin-left: 26px;
+        width: 41.78px;
+    }
+    .background-colorbar {
+        position: absolute;
+        width: 395px;
+        margin-top: 20px;
+        margin-left: 16px;
+        display: flex;
+    }    
+}
+/* mobile */
+@media screen and (max-width: 432px) {
+   .site-footer {
+    width: 432px;
+    height: 754px;
+    border: 0px;
+   }
+   .footer-column-container {
+    display: flex;
+    flex-direction: column;
+    }
+
+    /* Top of footer */
+
+    .member-profile {
+        width: 432px;
+        height: 182px;
+    }
+    .member-profile img {
+        width: 96px;
+        height: 96px;
+    }
+    .member-profile figcaption {
+        width: 256px;
+        height: 144px;
+        padding-top: 32px; ;
+        padding-right: 16px;
+    }
+    /* yellow line */
+    .footer-line {
+        margin-top: 10px;
+        margin-left: 160px;
+    }
+    /* minion photo */
+    .mid-left-column {
+        display: none;
+    }
+    .left-column {
+        display: none;
+    }
+    .right-column{
+        order: -1;
+        margin-left: 145px;
+        margin-bottom: 0;
+        margin-top: 16px;
+        padding: 0px;
+        gap: 10px;
+    }
+    .track-us-svg {
+        width: 243.33334350585938px;
+    }
+    .email-signup {
+        width: 239.87px;
+        height: 32px;
+    }
+    .email-signup button {
+        width: 53.33px;
+        height: 32px; 
+        margin-left: 66.5px;
+        background-color: #ffb901;
+        border-color: transparent;
+        border-radius: 2px;
+    }
+    .email-signup svg {
+        margin-left: -10px;
+    }
+    .mid-right-column {
+        padding-top: 0;
+        margin: 0px;
+    }
+
+   .background-colorbar {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: -50px;
+        width: 400px;
+   }
+}
