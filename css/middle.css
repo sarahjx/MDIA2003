@@ -2,19 +2,35 @@
         --middle-font-weight: 400;
     }
     
-    .section-title, .sub-section-title {
+    .section-title-container {
         text-align: center;
         line-height: 5px;
         gap: 8px;
-        margin-bottom: 32px;
+        margin-bottom: 25px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        color: #494949;
         font-weight: var(--middle-font-weight);
     }
+
+    .sub-section-title {
+        margin-bottom: 50px;
+        margin-top: 20px;
+        font-size: 11px;
+        color: #A3A3A3;
+        font-weight: var(--middle-font-weight);
+    }
+
  /* body-title*/
      .body-title {
         text-align: center;
-        margin: 60px 208px 70px 208px;  
+        margin: 60px 208px 100px 208px;  
         font-weight: var(--middle-font-weight);
+        color: #3B3B3B;
     }
+
     .highlight {
         color: #1EAFDE;
     }
@@ -24,6 +40,7 @@
         text-align: center;
         font-weight: var(--middle-font-weight);
     }
+
     .service-description {
         font-size: 12px;
         text-align: justify;
@@ -33,10 +50,11 @@
     .services-list {
         display: flex;
         justify-content: center;
+        padding: 0;
         margin-left: 208px;
         margin-right: 208px;
         margin-top: 32px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         gap: 32px; 
         list-style: none;   
         top: 95px;
@@ -52,15 +70,6 @@
         text-align: center; 
     }
 
-    .section-title {
-        font-size: 28px;
-    }
-
-    .sub-section-title {
-        font-size: 11px;
-        color: #A3A3A3;
-    }
-
     /* latest work */
 
     .latest-work-container {
@@ -71,7 +80,7 @@
         gap: 32px;
         position: relative;
         margin-top: 32px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
 
     }
 
@@ -164,7 +173,7 @@
 
     .work-items-container {
         margin: auto;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         display: grid;
         gap: 32px;
         grid-template-columns: repeat(3,320px);  
