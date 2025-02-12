@@ -263,22 +263,44 @@
       }
     /* latest news */
     .latest-work-container {
+        position: relative;
         display: grid;
-        grid-template-columns: 100% auto auto;
-        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr auto;
         margin-left: 16px;
         margin-right: 16px;
+        gap: 16px;;
     }
- 
+    
+    .latest-work-container .work-details-container, .latest-work-container .work-date-container {
+        position: absolute;
+        z-index: 1;
 
-    .latest-work-main {
-        grid-template-columns: 1fr;
-        width: 600px;
-        height: 367px;
-        margin-left: 16px;
-        margin-right: 16px;
-        padding: 0px;
     }
+    .latest-works-main .work-details-container {
+        width: 600px;
+    }
+    
+    .latest-works-main,
+    .latest-works-main .latest-work-image {
+        position: relative;
+        grid-column: span 2; 
+        grid-row: span 1;
+        width: 600px;
+    }
+    .latest-work-image, .work-details-container {
+        width: 292px;
+    }
+    
+    .latest-works-sub .work-date-container, 
+    .latest-works-last .work-date-container {
+        margin-top: 272px;
+    }
+
+    .latest-works-main .empty-square {
+        margin-left: 40px;
+    }
+    
     .work-items-container {
         margin-right: 16px;
         margin-left: 16px;
@@ -297,6 +319,19 @@
         width: 292px;
         height: 256px;
         border-radius: 2px;
+    }
+
+    .overlay {
+        background-color: rgba(25, 178, 222, 100);
+        opacity: 1;
+        height: 48px;
+        top: 82%;
+ 
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 4%;
     }
     
 
@@ -334,9 +369,7 @@
 /* mobile */
 @media screen and (max-width: 432px) {
     .body-title {
-        text-align: center;
-        margin-left: 16px;
-        margin-right: 32px;
+        text-align: center; 
     }
     .services-list {
         display: grid;
@@ -346,9 +379,11 @@
     }
     .service-title {
         margin: 0%;
+        font-weight: 700;
     }
     .service-description {
-        margin: 0%;
+        margin-top: 0;
+        color: #939393;
     }
     .service-item {
         width: fit-content;
@@ -357,6 +392,7 @@
     }
     .services-list svg {
         float: left;
+        margin-bottom: 100px;
     }
     /* latest-works */
     .latest-work-container {
@@ -380,7 +416,7 @@
         top: 0%;
     }
 
-    .work-gallery {
+    .work-items-container {
         display: flex;
         grid-template-columns: 1fr 1fr;
         flex-direction: column;
