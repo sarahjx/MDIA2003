@@ -452,7 +452,6 @@
    .background-colorbar {
         display: flex;
         margin-top: 0px;
-        margin-bottom: -50px;
         width: 400px;
    }
    .background-colorbar div {
