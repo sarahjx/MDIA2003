@@ -385,9 +385,6 @@
         top: 4%;
     }
 
-    
-
-
     /* client */
     .client-list {
         display: grid;
@@ -470,6 +467,7 @@
         padding:0px;
         border: 0px;
     }
+    .latest-works-main
 
     /* client */
    .past-clients {
