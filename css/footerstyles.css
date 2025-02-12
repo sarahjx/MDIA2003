@@ -13,7 +13,7 @@
     border-bottom: 150px solid;
     background-color: var(--footer-background-color);
     border-color: var(--footer-background-color);
-    
+    position: relative;
     
 }
 
@@ -194,6 +194,9 @@
 .color-bar {
     display: flex;
 }
+
+
+
 .color-bar div {
     width: 55px;
     height: 17px;
@@ -211,6 +214,7 @@
     background-color: white;
     width: 54.4px; 
     height: 17px;
+    position: relative;
 }
 .background-colorbar div:nth-child(1) {
     background-color: #25C389; 
