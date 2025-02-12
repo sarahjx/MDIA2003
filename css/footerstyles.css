@@ -369,6 +369,9 @@
         margin-left: 16px;
         display: flex;
     }    
+    .background-colorbar div {
+        width: 79px; 
+   }
 }
 /* mobile */
 @media screen and (max-width: 432px) {
@@ -447,4 +450,8 @@
         margin-bottom: -50px;
         width: 400px;
    }
+   .background-colorbar div {
+        width: 80px; 
+   }
+
 }
