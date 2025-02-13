@@ -271,12 +271,10 @@
 
       .service-item svg {
         position: relative;
-        left: 15%;
       }
 
       .service-title {
         position: relative;
-        left: 15%
         
       }
 
@@ -415,12 +413,6 @@
     .body-title {
         text-align: center; 
     }
-    /* .services-list {
-        display: grid;
-        grid-template-columns: 1fr; 
-        width: fit-content; 
-        
-    } */
     .intro {
         position: relative;
     }
@@ -439,7 +431,7 @@
         max-width: 384px ;
     }
     .service-title {
-        margin: 0 0 10px 40px;
+        margin: 0 0 10px 100px;
         font-weight: 700;
         text-align: left;
     }
