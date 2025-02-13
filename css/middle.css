@@ -271,12 +271,10 @@
 
       .service-item svg {
         position: relative;
-        left: 15%;
       }
 
       .service-title {
         position: relative;
-        left: 15%
         
       }
 
@@ -412,13 +410,11 @@
     .body-title {
         text-align: center; 
     }
-    /* .services-list {
-        display: grid;
-        grid-template-columns: 1fr; 
-        width: fit-content; 
-        
-    } */
+    .intro {
+        position: relative;
+    }
     .services-list {
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -428,19 +424,18 @@
         margin-bottom: 80px;
         gap: 32px; 
         list-style: none;   
-        top: 95px;
+        top: 10px;
         max-width: 384px ;
     }
     .service-title {
-        /* margin: 0, 0, 0, 70px; */
-        margin-left: 1px;
-        margin-top: 0;
+        margin: 0 0 10px 100px;
         font-weight: 700;
         text-align: left;
     }
 
     .service-description {
         margin-left: 100px;
+        margin-top: 0px;
     }
 
     .service-item { 
