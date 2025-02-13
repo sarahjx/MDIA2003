@@ -319,15 +319,13 @@
     
     .latest-works-main .work-title {
         font-size: 24px;
-  
     }
     
     .latest-works-main .empty-square {
-     
-        transform: scale(1.2858);
+        width: 36px;
+        height: 36px;
         top: 27%;
-        left: 86%;
-            
+        left: 85%;
         
     }
     
@@ -380,7 +378,6 @@
         opacity: 1;
         height: 48px;
         top: 82%;
- 
     }
 
     .overlay-text {
@@ -461,41 +458,94 @@
 
 
     /* latest-works */
-
-
-
     .latest-work-container {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
     }
-        /* display: grid; */
-        /* grid-template-columns: repeat(1, 400px);
-        grid-template-rows: repeat(3, 288px); */
-        /* align-items: center; */
-        /* position: absolute;
-        
-        /* } */
-        /* .latest-works-last,
-        .latest-works-sub,
-        .latest-works-main{
-            position: relative;
-            }
-            .work-date-container {
-                position: relative;
-                }
-                /* .latest-work-image {
-                    width: 400px;
-                    height: 288px;
-                    } */
-    .work-items-container {
-        display: flex;
-        flex-direction: column;
-    } 
-                    
-                    
-                    /* client  */
-   .past-clients {
+
+    .latest-works-main {
+        position: relative;
+        grid-column: span 1; 
+        width: 400px;
+        height: 288px;
+    }
+
+    .latest-work-container .latest-work-image {
+        width: 400px;
+        height: 288px;
+    }
+
+    .work-date-container { 
+        width: 50px;
+        height: 54px;
+    }
+
+    .latest-work-container .work-details-container {
+        width: 400px;
+        height: 54px;
+    }
+
+    .latest-works-main .work-title {
+        font-size: 16px;
+    }
+    
+    .latest-works-main .work-category{
+        font-size: 11px;
+    }
+
+    .latest-work-container .month-year {
+        font-size: 8px;
+    }
+
+    .latest-work-container .date {
+        margin-top: 8px;
+        margin-bottom: 4px;
+        font-size: 20px;
+    }
+
+    .latest-works-sub .work-date-container {
+        margin-top: 304px;
+    }
+
+    .latest-works-last .work-date-container {
+        margin-top: 608px;
+    }
+
+    .latest-works-sub .work-details-container {
+        margin-bottom: 304px;
+    }
+
+    .latest-works-main .empty-square {
+        width: 28px;
+        height: 28px;
+        left: 87%;
+        top: 20%;
+    }
+
+    .latest-work-container .empty-square {
+        margin-left: 15px;
+    }
+
+    .latest-work-container .work-title {
+        margin-top: 8px;
+    }
+
+    .latest-work-container .work-category {
+        margin-top: 5px;
+    }
+
+    .latest-works-main .work-date-container {
+        width: 50px;
+        height: 54px;
+    }
+
+    .latest-works-main .month-year{
+        margin: 5px; 
+    }
+
+    /* client  */
+    .past-clients {
         display: none;
-   }
+    }
 
 }
