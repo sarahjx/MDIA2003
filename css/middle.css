@@ -537,6 +537,20 @@
         margin: 5px; 
     }
 
+    /* best work */
+    .work-items-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .work-item img {
+        width: 400px;
+        
+    }
+    .work-item {
+        width: 400px;
+        height: 100%;
+    }
+
     /* client  */
     .past-clients {
         display: none;
